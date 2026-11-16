@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LaFabrique</title>
+
+    <link href="stylesheet.css" rel="stylesheet">
+        
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            <img src="Untitled.jpeg">
+        </div>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <nav id="menu">
+            <a href="#inicio" onclick="closeMenu()">Início</a>
+            <a href="#sobre" onclick="closeMenu()">Sobre</a>
+            <a href="#galeria" onclick="closeMenu()">Galeria</a>
+            <a href="#contactos" onclick="closeMenu()">Contactos</a>
+        </nav>
+
+    </header>
+
+
+    <!-- INÍCIO -->
+
+    <section id="inicio">
+
+        <div class="hero-content">
+
+            <h1>Dê vida às suas ideias</h1>
+
+            <p>
+                Somos a La Fabrique! Uma empresa de impressão 3D.
+                Com bom gosto, carinho e cuidado em tudo o que fazemos.
+            </p>
+
+            <a href="#sobre" class="button">
+                Saber mais
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOBRE -->
+
+    <section id="sobre">
+
+        <h2 class="section-title">Sobre Nós</h2>
+
+        <p class="section-description">
+            Conheça um pouco mais sobre nós e sobre aquilo que fazemos.
+        </p>
+
+        <div class="about-content">
+
+            <p>
+                Damos vida às suas ideias, transformando a sua imaginação em realidade através de soluções 3D criativas e inovadoras.
+
+                Criamos projetos únicos, onde cada detalhe ganha forma, combinando tecnologia, criatividade e paixão pelo design.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALERIA -->
+
+    <section id="galeria">
+
+        <h2 class="section-title">Galeria</h2>
+
+        <p class="section-description">
+            Alguns trabalhos e imagens que representam a nossa marca.
+        </p>
+
+        <div class="gallery">
+
+            <img src="natal.jpeg" alt="Fotografia 1">
+
+            <img src="halloween.jpeg" alt="Fotografia 2">
+
+            <img src="natal2.jpeg" alt="Fotografia 3">
+
+            <img src="https://picsum.photos/600/400?random=4" alt="Fotografia 4">
+
+            <img src="https://picsum.photos/600/400?random=5" alt="Fotografia 5">
+
+            <img src="https://picsum.photos/600/400?random=6" alt="Fotografia 6">
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTOS -->
+
+    <section id="contactos">
+
+        <h2 class="section-title">Contactos</h2>
+
+        <p class="section-description">
+            Entre em contacto connosco. Estamos disponíveis para ajudar.
+        </p>
+
+        <div class="contact-container">
+
+            <div class="contact-item">
+                <h3>📞 Telefone</h3>
+                <p>+351 913 825 611</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>✉️ Email</h3>
+                <p>bilapedroso@hotmail.com</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>📍 Localização</h3>
+                <p>Setúbal, Portugal</p>
+            </div>
+
+        </div>
+
+
+        <!-- REDES SOCIAIS -->
+
+        <div class="socials">
+
+            <h3>Encontre-nos nas redes sociais</h3>
+
+            <a href="" target="_blank"><img src="instagram.png"></a>
+
+            <a href="" target="_blank"><img src="facebook.png"></a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © <span id="year"></span> LaFabrique.
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("active");
+        }
+
+        function closeMenu() {
+            document.getElementById("menu").classList.remove("active");
+        }
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+    </script>
+
+</body>
+</html>
